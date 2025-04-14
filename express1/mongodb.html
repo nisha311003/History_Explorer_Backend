@@ -1,0 +1,31 @@
+<!--Mongodb is unstructed database
+    table is called as collection
+    tuple/row is called as document
+    column is called as field
+    collection-> group of mongodb documents
+    particular documents is called record
+    mongosh to enter in the shell
+    show dbs -> to show database
+    to enter in database -> use database_name(customers)
+    creating a database-> db.createCollection('customer_info')
+    show collections
+    -> customer_info
+    show dbs
+    db.customer_info.insertOne({name: 'Raj'})
+    db.customer_info.find()
+
+    _id -> primary key, hexadecimal format (12 bytes), it is unique
+    db.customer_info.find({address: 'Delhi'})
+     db.customer_info.insertMany([{_id: 2, name: 
+        'Manoj', address: 'Bihar', marks: 34},
+        {_id: 3, name: 'Ayush', address: 
+        'Bangalore', marks: 98}])
+    allcustomers=[{_id: 4, name: 'Rahneesh', address: 'Noida', marks: 78},{_id: 5, name: 'Anita', address: 'Delhi', marks: 45}]
+    db.customer_info.inserMany(allcustomers)
+     db.customer_info.updateOne({'_id': 3}, {$set:{'address': 'Noida'}})
+      db.customer_info.updateMany({$or:[{address: 'Delhi'}, {address: 'Mumbai'}]}, {$set:{address:'Bangalore'}})
+-->
+<!-- 
+    Mongoose is an object data modeling (odm)
+    Schema-> Each schema maps to a mongodb collection and defines the shape of the documents
+-->
