@@ -1,7 +1,6 @@
 node_modules/
 .env
 .docker/
-Dockerfile
 docker-compose.yml
 .git/
 .vscode/
