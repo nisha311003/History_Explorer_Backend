@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 const credentialsSchema = new mongoose.Schema(
     {
-        Uname: String,
-        email: {type: String, unique: true},
-        password: String,
+        Uname: {type: String, required: true},
+        email: {type: String, required:true, unique: true},
+        password: {type: String, required: true},
         resetToken: String,
         resetTokenExpiry: Date,
 
