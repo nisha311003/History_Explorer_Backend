@@ -22,7 +22,7 @@ app.use(cors({
 //     res.send("Backend running!");
 //   });
 app.get("/", (req, res) => {
-    res.send("Backend running!");
+    res.send("Hello CI/CD!");
   });
 app.post("/register",registerUser);
 //app.use(errorHandler);
