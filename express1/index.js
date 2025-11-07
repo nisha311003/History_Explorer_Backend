@@ -24,6 +24,9 @@ app.use(cors({
 app.get("/", (req, res) => {
     res.send("Hello CI/CD!");
   });
+app.get("/health", (req, res)=>{
+    res.status(200).json({status: "OK", message: "Server is healthy"});
+})
 app.post("/register",registerUser);
 //app.use(errorHandler);
 app.post("/login",loginUser);
